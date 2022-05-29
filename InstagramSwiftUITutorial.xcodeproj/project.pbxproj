@@ -17,6 +17,7 @@
 		2CB0C951284418C000648CF1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C950284418C000648CF1 /* NotificationView.swift */; };
 		2CB0C953284418D600648CF1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C952284418D600648CF1 /* ProfileView.swift */; };
 		2CB0C955284418FD00648CF1 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C954284418FD00648CF1 /* UploadPostView.swift */; };
+		2CB0C95728441D6600648CF1 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C95628441D6600648CF1 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2CB0C950284418C000648CF1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		2CB0C952284418D600648CF1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2CB0C954284418FD00648CF1 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		2CB0C95628441D6600648CF1 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB0C94C2844187B00648CF1 /* FeedView.swift */,
+				2CB0C95628441D6600648CF1 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB0C94F284418AA00648CF1 /* SearchView.swift in Sources */,
+				2CB0C95728441D6600648CF1 /* FeedCell.swift in Sources */,
 				2CB0C94D2844187B00648CF1 /* FeedView.swift in Sources */,
 				2CB0C92C2843F68800648CF1 /* ContentView.swift in Sources */,
 				2CB0C92A2843F68800648CF1 /* InstagramSwiftUITutorialApp.swift in Sources */,
