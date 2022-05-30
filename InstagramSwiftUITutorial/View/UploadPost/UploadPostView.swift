@@ -31,9 +31,9 @@ struct UploadPostView: View {
                     content: {
                         ImagePicker(image: $selectedImage)
                     })
-            } else {
+            } else if let image = postImage {
                 HStack(alignment: .top) {
-                    Image("background-colors")
+                    image
                         .resizable()
                         .scaledToFill()
                         .frame(width: 96, height: 96)
