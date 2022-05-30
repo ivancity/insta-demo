@@ -12,6 +12,7 @@ struct MainTabView: View {
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                     }
+                    .navigationTitle("Search")
                 UploadPostView()
                     .tabItem {
                         Image(systemName: "plus.square")
