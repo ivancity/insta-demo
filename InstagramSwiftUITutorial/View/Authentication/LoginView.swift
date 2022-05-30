@@ -96,20 +96,25 @@ struct LoginView: View {
                             
                         }
                     ) {
-                        HStack {
-                            Text("Dont have an account?")
-                                .font(
-                                    .system(size: 14)
-                                )
-                            Text("Sign Up")
-                                .font(
-                                    .system(size: 14, weight: .semibold)
-                                )
+                        NavigationLink(
+                            destination: RegistrationView()) {
+                                HStack {
+                                    Text("Dont have an account?")
+                                        .font(
+                                            .system(size: 14)
+                                        )
+                                    Text("Sign Up")
+                                        .font(
+                                            .system(size: 14, weight: .semibold)
+                                        )
+                                }
+                                .foregroundColor(.white)
                         }
-                        .foregroundColor(.white)
+                            
                     }
                     .padding(.bottom, 30)
                 }
+                .padding(.top, -16)
             }
             
         }
