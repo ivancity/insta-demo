@@ -19,6 +19,7 @@
 		2CB0C955284418FD00648CF1 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C954284418FD00648CF1 /* UploadPostView.swift */; };
 		2CB0C95728441D6600648CF1 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C95628441D6600648CF1 /* FeedCell.swift */; };
 		2CB0C9592844529800648CF1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9582844529800648CF1 /* SearchBar.swift */; };
+		2CB0C95B284456C000648CF1 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C95A284456C000648CF1 /* PostGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2CB0C954284418FD00648CF1 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		2CB0C95628441D6600648CF1 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		2CB0C9582844529800648CF1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2CB0C95A284456C000648CF1 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		2CB0C9442843FEB700648CF1 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				2CB0C95A284456C000648CF1 /* PostGridView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				2CB0C94F284418AA00648CF1 /* SearchView.swift in Sources */,
 				2CB0C95728441D6600648CF1 /* FeedCell.swift in Sources */,
+				2CB0C95B284456C000648CF1 /* PostGridView.swift in Sources */,
 				2CB0C94D2844187B00648CF1 /* FeedView.swift in Sources */,
 				2CB0C92C2843F68800648CF1 /* ContentView.swift in Sources */,
 				2CB0C92A2843F68800648CF1 /* InstagramSwiftUITutorialApp.swift in Sources */,

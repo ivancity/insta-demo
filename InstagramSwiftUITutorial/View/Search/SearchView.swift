@@ -10,8 +10,9 @@ struct SearchView: View {
             SearchBar(text: $searchText)
                 .padding()
             
-            
             // MARK: grid view / user list
+            PostGridView()
+            
         }
     }
 }
