@@ -6,6 +6,10 @@ struct RegistrationView: View {
     @State private var fullName = ""
     @State private var userName = ""
     @State private var password = ""
+    @State private var selectedImage: UIImage?
+    @State private var image: Image?
+    @State private var imagePickerpresented = false
+    
     @Environment(\.presentationMode) var mode
     
     var body: some View {
@@ -20,19 +24,37 @@ struct RegistrationView: View {
             )
             .ignoresSafeArea()
             VStack {
-                Button(
-                    action: {
-                        
-                    },
-                    label: {
-                        Image("plus-icon")
-                            .renderingMode(.template)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 140, height: 140)
-                            .foregroundColor(.white)
-                    }
-                )
+                if let image = image {
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 140, height: 140)
+                        .clipShape(Circle())
+                } else {
+                    Button(
+                        action: {
+                            imagePickerpresented.toggle()
+                        },
+                        label: {
+                            Image("plus-icon")
+                                .renderingMode(.template)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 140, height: 140)
+                                .foregroundColor(.white)
+                        }
+                    )
+                    .sheet(
+                        isPresented: $imagePickerpresented,
+                        onDismiss: {
+                            loadImage()
+                        },
+                        content: {
+                            ImagePicker(image: $selectedImage)
+                        }
+                    )
+                }
+                
                 
                 VStack(spacing: 20) {
                     CustomTextField(
@@ -127,6 +149,15 @@ struct RegistrationView: View {
                 .padding(.bottom, 30)
             }
         }
+    }
+}
+
+extension RegistrationView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else {
+            return
+        }
+        image = Image(uiImage: selectedImage)
     }
 }
 

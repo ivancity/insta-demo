@@ -30,7 +30,8 @@ struct UploadPostView: View {
                     },
                     content: {
                         ImagePicker(image: $selectedImage)
-                    })
+                    }
+                )
             } else if let image = postImage {
                 HStack(alignment: .top) {
                     image
