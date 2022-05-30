@@ -11,11 +11,13 @@ struct PostGridView: View {
             spacing: 2
         ) {
             ForEach(0..<10) { _ in
-                Image("background-colors")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: width, height: width)
-                    .clipped()
+                NavigationLink(destination: FeedView()) {
+                    Image("background-colors")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: width, height: width)
+                        .clipped()
+                }
             }
         }
     }
