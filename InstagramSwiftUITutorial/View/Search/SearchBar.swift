@@ -1,16 +1,15 @@
-//
-//  SearchBar.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 5/29/22.
-//
-
 import SwiftUI
+
+enum Field: Hashable {
+    case search
+}
 
 struct SearchBar: View {
     
     @Binding var text: String
     @Binding var isEditing: Bool
+    
+    @FocusState private var focusedField: Field?
     
     var body: some View {
         HStack {
@@ -37,14 +36,19 @@ struct SearchBar: View {
             )
             .onTapGesture {
                 isEditing = true
+                focusedField = .search
             }
+            .focused($focusedField, equals: .search)
             
             if isEditing {
                 Button(
                     action: {
                         isEditing = false
                         text = ""
-                        UIApplication.shared.endEditing()
+                        focusedField = nil
+                        
+                        // this is the old way but still works
+//                        UIApplication.shared.endEditing()
                     },
                     label: {
                         Text("Cancel")
