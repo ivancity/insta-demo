@@ -97,7 +97,9 @@ struct LoginView: View {
                         }
                     ) {
                         NavigationLink(
-                            destination: RegistrationView()) {
+                            destination:
+                                RegistrationView().navigationBarHidden(true)
+                        ) {
                                 HStack {
                                     Text("Dont have an account?")
                                         .font(
