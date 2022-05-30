@@ -11,7 +11,8 @@ struct SearchView: View {
                 .padding()
             
             // MARK: grid view / user list
-            PostGridView()
+//            PostGridView()
+            UserListView()
             
         }
     }
