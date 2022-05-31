@@ -40,6 +40,7 @@
 		2CB0C98028458AB300648CF1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB0C97F28458AB300648CF1 /* FirebaseStorage */; };
 		2CB0C98328458BB400648CF1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB0C98228458BB400648CF1 /* Kingfisher */; };
 		2CB0C98528458CA400648CF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */; };
+		2CB0C9872845908700648CF1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9862845908700648CF1 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		2CB0C972284551C400648CF1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		2CB0C974284551D100648CF1 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2CB0C9862845908700648CF1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 		2CB0C9472843FEF000648CF1 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				2CB0C9862845908700648CF1 /* AuthViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				2CB0C953284418D600648CF1 /* ProfileView.swift in Sources */,
 				2CB0C951284418C000648CF1 /* NotificationView.swift in Sources */,
 				2CB0C9692844810800648CF1 /* ProfileActionButtonView.swift in Sources */,
+				2CB0C9872845908700648CF1 /* AuthViewModel.swift in Sources */,
 				2CB0C95F284458C900648CF1 /* UserListView.swift in Sources */,
 				2CB0C963284470BF00648CF1 /* NotificationCell.swift in Sources */,
 				2CB0C96D2845459800648CF1 /* LoginView.swift in Sources */,
