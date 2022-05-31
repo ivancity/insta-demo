@@ -109,7 +109,10 @@ struct RegistrationView: View {
                 
                 Button(
                     action: {
-                        viewModel.register()
+                        viewModel.register(
+                            withEmail: email,
+                            password: password
+                        )
                     }
                 ) {
                     Text("Sign Up")
