@@ -1,16 +1,11 @@
-//
-//  AuthViewModel.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 5/30/22.
-//
-
 import SwiftUI
 import Firebase
 
 class AuthViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
+    
+    static let shared = AuthViewModel()
     
     init() {
         userSession = Auth.auth().currentUser
@@ -33,7 +28,8 @@ class AuthViewModel: ObservableObject {
     }
     
     func signOut() {
-        
+        self.userSession = nil
+        try? Auth.auth().signOut()
     }
     
     func fetchUser() {
