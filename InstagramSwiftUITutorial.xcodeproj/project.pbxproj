@@ -41,6 +41,7 @@
 		2CB0C98328458BB400648CF1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB0C98228458BB400648CF1 /* Kingfisher */; };
 		2CB0C98528458CA400648CF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */; };
 		2CB0C9872845908700648CF1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9862845908700648CF1 /* AuthViewModel.swift */; };
+		2CB0C9892845AF3C00648CF1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		2CB0C974284551D100648CF1 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2CB0C9862845908700648CF1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		2CB0C9372843FD1300648CF1 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				2CB0C95B284456C000648CF1 /* PostGridView.swift in Sources */,
 				2CB0C96F284545A600648CF1 /* RegistrationView.swift in Sources */,
 				2CB0C973284551C400648CF1 /* CustomTextField.swift in Sources */,
+				2CB0C9892845AF3C00648CF1 /* ImageUploader.swift in Sources */,
 				2CB0C94D2844187B00648CF1 /* FeedView.swift in Sources */,
 				2CB0C92C2843F68800648CF1 /* ContentView.swift in Sources */,
 				2CB0C92A2843F68800648CF1 /* InstagramSwiftUITutorialApp.swift in Sources */,

@@ -111,7 +111,10 @@ struct RegistrationView: View {
                     action: {
                         viewModel.register(
                             withEmail: email,
-                            password: password
+                            password: password,
+                            image: selectedImage,
+                            fullname: fullName,
+                            username: userName
                         )
                     }
                 ) {
