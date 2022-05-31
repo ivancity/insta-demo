@@ -74,7 +74,9 @@ struct LoginView: View {
                     
                     Button(
                         action: {
-                            viewModel.login()
+                            viewModel.login(
+                                withEmail: email, password: password
+                            )
                         }
                     ) {
                         Text("Sign In")
