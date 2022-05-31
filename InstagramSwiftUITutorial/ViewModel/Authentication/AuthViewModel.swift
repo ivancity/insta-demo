@@ -70,7 +70,12 @@ class AuthViewModel: ObservableObject {
         COLLECTION_USERS
             .document(uid)
             .getDocument { snapshot, _ in
-                print(snapshot?.data())
+                
+                let user = try? snapshot?.data(as: User.self)
+//                guard let dictionary = snapshot?.data() else { return }
+                print("test")
+                
+                
             }
     }
     
