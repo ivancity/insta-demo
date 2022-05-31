@@ -42,6 +42,7 @@
 		2CB0C98528458CA400648CF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */; };
 		2CB0C9872845908700648CF1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9862845908700648CF1 /* AuthViewModel.swift */; };
 		2CB0C9892845AF3C00648CF1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */; };
+		2CE4F0D42845C52F003E2324 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D32845C52F003E2324 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2CB0C9862845908700648CF1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		2CE4F0D32845C52F003E2324 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				2CB0C96A28453F4D00648CF1 /* ImagePicker.swift */,
 				2CB0C972284551C400648CF1 /* CustomTextField.swift */,
 				2CB0C974284551D100648CF1 /* CustomSecureField.swift */,
+				2CE4F0D32845C52F003E2324 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				2CB0C963284470BF00648CF1 /* NotificationCell.swift in Sources */,
 				2CB0C96D2845459800648CF1 /* LoginView.swift in Sources */,
 				2CB0C96128445FF200648CF1 /* Extensions.swift in Sources */,
+				2CE4F0D42845C52F003E2324 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

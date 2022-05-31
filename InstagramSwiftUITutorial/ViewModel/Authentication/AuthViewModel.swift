@@ -9,6 +9,7 @@ class AuthViewModel: ObservableObject {
     
     init() {
         userSession = Auth.auth().currentUser
+        fetchUser()
     }
     
     func login(withEmail email: String, password: String) {
@@ -48,9 +49,8 @@ class AuthViewModel: ObservableObject {
                     "profileImageUrl": imageUrl,
                     "uid": user.uid
                 ]
-                Firestore
-                    .firestore()
-                    .collection("users")
+                COLLECTION_USERS
+                // This is important so we make a relationship between our auth uid and the entry for this user data, this way we can fetch later this document that we are creating based on our uid from the auth flow.
                     .document(user.uid)
                     .setData(data) { _ in
                         print("Succesfully uploaded all data")
@@ -66,7 +66,12 @@ class AuthViewModel: ObservableObject {
     }
     
     func fetchUser() {
-        
+        guard let uid = userSession?.uid else { return }
+        COLLECTION_USERS
+            .document(uid)
+            .getDocument { snapshot, _ in
+                print(snapshot?.data())
+            }
     }
     
     func resetPassword() {
