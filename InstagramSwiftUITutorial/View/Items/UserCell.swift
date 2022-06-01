@@ -1,31 +1,41 @@
-//
-//  UserCell.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 5/29/22.
-//
-
 import SwiftUI
 
 struct UserCell: View {
+    
+    let user: User
+    
     var body: some View {
         HStack {
             // MARK: Image
-            Image("background-colors")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 48, height: 48)
-                .clipShape(Circle())
+            
+            AsyncImage(
+                url: URL(string: user.profileImageUrl)
+            ) { image in
+                image.resizable()
+                    .scaledToFill()
+                    .frame(width: 48, height: 48)
+                    .clipShape(Circle())
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 48, height: 48)
+            
+//This is using the Kingfisher library
+//            KFImage(URL(string: user.profileImageUrl))
+//                .resizable()
+//                .scaledToFill()
+//                .frame(width: 48, height: 48)
+//                .clipShape(Circle())
             
             // MARK: User name, full name
             VStack(alignment: .leading) {
-                Text("batman")
+                Text(user.username)
                     .font(
                         .system(
                             size: 14, weight: .semibold
                         )
                     )
-                Text("Bruce Wayne")
+                Text(user.fullname)
                     .font(.system(size: 14))
             }
             Spacer()
@@ -33,8 +43,3 @@ struct UserCell: View {
     }
 }
 
-struct UserCell_Previews: PreviewProvider {
-    static var previews: some View {
-        UserCell()
-    }
-}
