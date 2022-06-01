@@ -1,15 +1,32 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
+    
+    let user: User
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image("background-colors")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
-                    .padding(.leading)
+                
+                AsyncImage(
+                    url: URL(string: user.profileImageUrl)
+                ) { image in
+                    image.resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
+                        .clipShape(Circle())
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 80, height: 80)
+                .padding(.leading)
+                
+//                Image("background-colors")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(width: 80, height: 80)
+//                    .clipShape(Circle())
+//                    .padding(.leading)
                 Spacer()
                 HStack(spacing: 16) {
                     UserStatView(value: 2, title: "Followers")
@@ -17,7 +34,7 @@ struct ProfileHeaderView: View {
                     UserStatView(value: 1009, title: "Following")
                 }.padding(.trailing, 16)
             }
-            Text("Bruce Wayne")
+            Text(user.fullname)
                 .font(.system(size: 15, weight: .semibold))
                 .padding([.leading, .top])
             Text("Gotham Dark Knight Billionaire")
@@ -26,7 +43,7 @@ struct ProfileHeaderView: View {
                 .padding(.top, 1)
             HStack {
                 Spacer()
-                ProfileActionButtonView()
+                ProfileActionButtonView(isCurrentUser: user.isCurrentUser)
                 Spacer()
             }
             .padding(.top)
@@ -34,8 +51,8 @@ struct ProfileHeaderView: View {
     }
 }
 
-struct ProfileHeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileHeaderView()
-    }
-}
+//struct ProfileHeaderView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProfileHeaderView()
+//    }
+//}
