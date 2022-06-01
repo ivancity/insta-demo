@@ -2,14 +2,14 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     
-    let user: User
+    @ObservedObject var viewModel: ProfileViewModel
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 
                 AsyncImage(
-                    url: URL(string: user.profileImageUrl)
+                    url: URL(string: viewModel.user.profileImageUrl)
                 ) { image in
                     image.resizable()
                         .scaledToFill()
@@ -34,7 +34,7 @@ struct ProfileHeaderView: View {
                     UserStatView(value: 1009, title: "Following")
                 }.padding(.trailing, 16)
             }
-            Text(user.fullname)
+            Text(viewModel.user.fullname)
                 .font(.system(size: 15, weight: .semibold))
                 .padding([.leading, .top])
             Text("Gotham Dark Knight Billionaire")
@@ -43,7 +43,7 @@ struct ProfileHeaderView: View {
                 .padding(.top, 1)
             HStack {
                 Spacer()
-                ProfileActionButtonView(isCurrentUser: user.isCurrentUser)
+                ProfileActionButtonView(viewModel: viewModel)
                 Spacer()
             }
             .padding(.top)

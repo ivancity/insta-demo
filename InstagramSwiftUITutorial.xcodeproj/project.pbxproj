@@ -14,6 +14,7 @@
 		2C10647C2846CD7400475F3B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2C10647B2846CD7400475F3B /* FirebaseMessaging */; };
 		2C10647E2846CD7400475F3B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2C10647D2846CD7400475F3B /* FirebaseStorage */; };
 		2C1064812846DCCA00475F3B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1064802846DCCA00475F3B /* SearchViewModel.swift */; };
+		2C10648328470E0A00475F3B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C10648228470E0A00475F3B /* ProfileViewModel.swift */; };
 		2CB0C92A2843F68800648CF1 /* InstagramSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9292843F68800648CF1 /* InstagramSwiftUITutorialApp.swift */; };
 		2CB0C92C2843F68800648CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C92B2843F68800648CF1 /* ContentView.swift */; };
 		2CB0C92E2843F68B00648CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB0C92D2843F68B00648CF1 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		2C1064802846DCCA00475F3B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		2C10648228470E0A00475F3B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		2CB0C9262843F68800648CF1 /* InstagramSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB0C9292843F68800648CF1 /* InstagramSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		2CB0C92B2843F68800648CF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		2CB0C9482843FEF500648CF1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				2C10648228470E0A00475F3B /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				2CE4F0D628466B2F003E2324 /* User.swift in Sources */,
 				2CB0C9692844810800648CF1 /* ProfileActionButtonView.swift in Sources */,
 				2CB0C9872845908700648CF1 /* AuthViewModel.swift in Sources */,
+				2C10648328470E0A00475F3B /* ProfileViewModel.swift in Sources */,
 				2CB0C95F284458C900648CF1 /* UserListView.swift in Sources */,
 				2CB0C963284470BF00648CF1 /* NotificationCell.swift in Sources */,
 				2CB0C96D2845459800648CF1 /* LoginView.swift in Sources */,
