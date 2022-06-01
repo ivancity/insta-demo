@@ -13,7 +13,10 @@ class ProfileViewModel: ObservableObject {
     init(user: User) { self.user = user }
     
     func follow() {
-        
+        guard let uid = user.id else { return }
+        UserService.follow(uid: uid) { _ in
+            print("works in here \(self.user.username)")
+        }
     }
     
     func unfollow() {

@@ -22,7 +22,7 @@ struct ProfileActionButtonView: View {
         } else {
             HStack {
                 Button(action: {
-                    viewModel.unfollow()
+                    isFollowed ? viewModel.unfollow() : viewModel.follow()
                 }) {
                     Text(isFollowed ? "Following" : "Follow")
                         .font(.system(size: 15, weight: .semibold))
