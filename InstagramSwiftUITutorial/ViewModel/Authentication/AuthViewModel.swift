@@ -4,6 +4,7 @@ import Firebase
 class AuthViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     
     static let shared = AuthViewModel()
     
@@ -20,6 +21,7 @@ class AuthViewModel: ObservableObject {
             }
             guard let user = result?.user else { return }
             self.userSession = user
+            self.fetchUser()
         }
     }
     
@@ -55,6 +57,7 @@ class AuthViewModel: ObservableObject {
                     .setData(data) { _ in
                         print("Succesfully uploaded all data")
                         self.userSession = user
+                        self.fetchUser()
                     }
             }
         }
@@ -70,12 +73,8 @@ class AuthViewModel: ObservableObject {
         COLLECTION_USERS
             .document(uid)
             .getDocument { snapshot, _ in
-                
                 let user = try? snapshot?.data(as: User.self)
-//                guard let dictionary = snapshot?.data() else { return }
-                print("test")
-                
-                
+                self.currentUser = user
             }
     }
     
