@@ -13,6 +13,7 @@
 		2C10647A2846CD7400475F3B /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C1064792846CD7400475F3B /* FirebaseFunctions */; };
 		2C10647C2846CD7400475F3B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2C10647B2846CD7400475F3B /* FirebaseMessaging */; };
 		2C10647E2846CD7400475F3B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2C10647D2846CD7400475F3B /* FirebaseStorage */; };
+		2C1064812846DCCA00475F3B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1064802846DCCA00475F3B /* SearchViewModel.swift */; };
 		2CB0C92A2843F68800648CF1 /* InstagramSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9292843F68800648CF1 /* InstagramSwiftUITutorialApp.swift */; };
 		2CB0C92C2843F68800648CF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C92B2843F68800648CF1 /* ContentView.swift */; };
 		2CB0C92E2843F68B00648CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB0C92D2843F68B00648CF1 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1064802846DCCA00475F3B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		2CB0C9262843F68800648CF1 /* InstagramSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB0C9292843F68800648CF1 /* InstagramSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		2CB0C92B2843F68800648CF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C10647F2846DCB300475F3B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2C1064802846DCCA00475F3B /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		2CB0C91D2843F68700648CF1 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		2CB0C9382843FD1B00648CF1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2C10647F2846DCB300475F3B /* Search */,
 				2CB0C9482843FEF500648CF1 /* Profile */,
 				2CB0C9472843FEF000648CF1 /* Authentication */,
 				2CB0C9462843FEEC00648CF1 /* Notifications */,
@@ -408,6 +419,7 @@
 				2CB0C95D284458BD00648CF1 /* UserCell.swift in Sources */,
 				2CB0C9592844529800648CF1 /* SearchBar.swift in Sources */,
 				2CB0C975284551D100648CF1 /* CustomSecureField.swift in Sources */,
+				2C1064812846DCCA00475F3B /* SearchViewModel.swift in Sources */,
 				2CB0C953284418D600648CF1 /* ProfileView.swift in Sources */,
 				2CB0C951284418C000648CF1 /* NotificationView.swift in Sources */,
 				2CE4F0D628466B2F003E2324 /* User.swift in Sources */,
