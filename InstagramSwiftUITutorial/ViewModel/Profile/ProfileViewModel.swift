@@ -1,10 +1,3 @@
-//
-//  ProfileViewModel.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 5/31/22.
-//
-
 import SwiftUI
 
 class ProfileViewModel: ObservableObject {

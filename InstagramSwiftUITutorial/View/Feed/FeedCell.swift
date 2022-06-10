@@ -1,17 +1,31 @@
 import SwiftUI
 
 struct FeedCell: View {
+    let post: Post
+    
     var body: some View {
         VStack(alignment: .leading) {
             // MARK: user info
             HStack {
-                Image("background-colors")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 36, height: 36)
-                    .clipped()
-                    .cornerRadius(18)
-                Text("Joker")
+                AsyncImage(
+                    url: URL(string: post.ownerImageUrl)
+                ) { image in
+                    image.resizable()
+                        .scaledToFill()
+                        .frame(width: 36, height: 36)
+                        .clipShape(Circle())
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 36, height: 36)
+                
+//                Image("background-colors")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(width: 36, height: 36)
+//                    .clipped()
+//                    .cornerRadius(18)
+                Text(post.ownerUsername)
                     .font(
                         .system(
                             size: 14,
@@ -22,11 +36,23 @@ struct FeedCell: View {
             .padding([.leading, .bottom], 8)
             
             // MARK: main image
-            Image("background-colors")
-                .resizable()
-                .scaledToFill()
-                .frame(maxHeight: 440)
-                .clipped()
+//            Image("background-colors")
+//                .resizable()
+//                .scaledToFill()
+//                .frame(maxHeight: 440)
+//                .clipped()
+            
+            AsyncImage(
+                url: URL(string: post.imageUrl)
+            ) { image in
+                image.resizable()
+                    .scaledToFill()
+                    .frame(maxHeight: 440)
+                    .clipped()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(maxHeight: 440)
             
             // MARK: action button
             HStack(spacing: 16) {
@@ -69,7 +95,7 @@ struct FeedCell: View {
             .foregroundColor(.black)
             
             // MARK: Likes
-            Text("3 likes")
+            Text("\(post.likes) likes")
                 .font(
                     .system(
                         size: 14,
@@ -81,12 +107,12 @@ struct FeedCell: View {
             
             // MARK: caption
             HStack {
-                Text("batman")
+                Text(post.ownerUsername ?? "")
                     .font(.system(
                         size: 14,
                         weight: .semibold)
                     ) +
-                Text(" All men have limits. They learn what they are and learn not to do exceed them. I ignore mine.")
+                Text(" \(post.caption)")
                     .font(.system(size: 15))
             }.padding(.horizontal, 8)
             Text("2d")
@@ -98,8 +124,8 @@ struct FeedCell: View {
     }
 }
 
-struct Feed_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedCell()
-    }
-}
+//struct Feed_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FeedCell()
+//    }
+//}

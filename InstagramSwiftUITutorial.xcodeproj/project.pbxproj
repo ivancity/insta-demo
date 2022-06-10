@@ -48,6 +48,8 @@
 		2CB0C98528458CA400648CF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */; };
 		2CB0C9872845908700648CF1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9862845908700648CF1 /* AuthViewModel.swift */; };
 		2CB0C9892845AF3C00648CF1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */; };
+		2CC234AC2851E39E00741485 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AB2851E39E00741485 /* Post.swift */; };
+		2CC234AE28522D7400741485 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AD28522D7400741485 /* FeedViewModel.swift */; };
 		2CE4F0D42845C52F003E2324 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D32845C52F003E2324 /* Constants.swift */; };
 		2CE4F0D628466B2F003E2324 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D528466B2F003E2324 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -88,6 +90,8 @@
 		2CB0C98428458CA400648CF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2CB0C9862845908700648CF1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		2CC234AB2851E39E00741485 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2CC234AD28522D7400741485 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		2CE4F0D32845C52F003E2324 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2CE4F0D528466B2F003E2324 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE4F0D528466B2F003E2324 /* User.swift */,
+				2CC234AB2851E39E00741485 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 		2CB0C9452843FEE700648CF1 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				2CC234AD28522D7400741485 /* FeedViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -421,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC234AE28522D7400741485 /* FeedViewModel.swift in Sources */,
 				2CB0C94F284418AA00648CF1 /* SearchView.swift in Sources */,
 				2CB0C95728441D6600648CF1 /* FeedCell.swift in Sources */,
 				2CB0C95B284456C000648CF1 /* PostGridView.swift in Sources */,
@@ -442,6 +449,7 @@
 				2CB0C95D284458BD00648CF1 /* UserCell.swift in Sources */,
 				2CB0C9592844529800648CF1 /* SearchBar.swift in Sources */,
 				2CB0C975284551D100648CF1 /* CustomSecureField.swift in Sources */,
+				2CC234AC2851E39E00741485 /* Post.swift in Sources */,
 				2C1064812846DCCA00475F3B /* SearchViewModel.swift in Sources */,
 				2CB0C953284418D600648CF1 /* ProfileView.swift in Sources */,
 				2CB0C951284418C000648CF1 /* NotificationView.swift in Sources */,
