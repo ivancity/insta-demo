@@ -51,6 +51,7 @@
 		2CC234AC2851E39E00741485 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AB2851E39E00741485 /* Post.swift */; };
 		2CC234AE28522D7400741485 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AD28522D7400741485 /* FeedViewModel.swift */; };
 		2CC234B0285386CF00741485 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AF285386CF00741485 /* PostGridViewModel.swift */; };
+		2CC234B2285783F300741485 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234B1285783F300741485 /* FeedCellViewModel.swift */; };
 		2CE4F0D42845C52F003E2324 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D32845C52F003E2324 /* Constants.swift */; };
 		2CE4F0D628466B2F003E2324 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D528466B2F003E2324 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		2CC234AB2851E39E00741485 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2CC234AD28522D7400741485 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		2CC234AF285386CF00741485 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
+		2CC234B1285783F300741485 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		2CE4F0D32845C52F003E2324 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2CE4F0D528466B2F003E2324 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				2CC234AD28522D7400741485 /* FeedViewModel.swift */,
+				2CC234B1285783F300741485 /* FeedCellViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				2CB0C95D284458BD00648CF1 /* UserCell.swift in Sources */,
 				2CB0C9592844529800648CF1 /* SearchBar.swift in Sources */,
 				2CB0C975284551D100648CF1 /* CustomSecureField.swift in Sources */,
+				2CC234B2285783F300741485 /* FeedCellViewModel.swift in Sources */,
 				2CC234AC2851E39E00741485 /* Post.swift in Sources */,
 				2C1064812846DCCA00475F3B /* SearchViewModel.swift in Sources */,
 				2CB0C953284418D600648CF1 /* ProfileView.swift in Sources */,

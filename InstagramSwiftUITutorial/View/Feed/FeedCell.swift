@@ -1,14 +1,20 @@
 import SwiftUI
 
 struct FeedCell: View {
-    let post: Post
+    @ObservedObject var viewModel: FeedCellViewModel
+    
+    var didLike: Bool { return viewModel.post.didLike ?? false }
+    
+    init(viewModel: FeedCellViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
             // MARK: user info
             HStack {
                 AsyncImage(
-                    url: URL(string: post.ownerImageUrl)
+                    url: URL(string: viewModel.post.ownerImageUrl)
                 ) { image in
                     image.resizable()
                         .scaledToFill()
@@ -25,7 +31,7 @@ struct FeedCell: View {
 //                    .frame(width: 36, height: 36)
 //                    .clipped()
 //                    .cornerRadius(18)
-                Text(post.ownerUsername)
+                Text(viewModel.post.ownerUsername)
                     .font(
                         .system(
                             size: 14,
@@ -43,7 +49,7 @@ struct FeedCell: View {
 //                .clipped()
             
             AsyncImage(
-                url: URL(string: post.imageUrl)
+                url: URL(string: viewModel.post.imageUrl)
             ) { image in
                 image.resizable()
                     .scaledToFill()
@@ -57,11 +63,14 @@ struct FeedCell: View {
             // MARK: action button
             HStack(spacing: 16) {
                 Button(
-                    action: {},
+                    action: {
+                        didLike ? viewModel.unlike() : viewModel.like()
+                    },
                     label: {
-                        Image(systemName: "heart")
+                        Image(systemName: didLike ? "heart.fill" : "heart")
                             .resizable()
                             .scaledToFill()
+                            .foregroundColor(didLike ? .red : .black)
                             .frame(width: 20, height: 20)
                             .font(.system(size: 20))
                             .padding(4)
@@ -95,7 +104,7 @@ struct FeedCell: View {
             .foregroundColor(.black)
             
             // MARK: Likes
-            Text("\(post.likes) likes")
+            Text(viewModel.likeString)
                 .font(
                     .system(
                         size: 14,
@@ -107,12 +116,12 @@ struct FeedCell: View {
             
             // MARK: caption
             HStack {
-                Text(post.ownerUsername ?? "")
+                Text(viewModel.post.ownerUsername ?? "")
                     .font(.system(
                         size: 14,
                         weight: .semibold)
                     ) +
-                Text(" \(post.caption)")
+                Text(" \(viewModel.post.caption)")
                     .font(.system(size: 15))
             }.padding(.horizontal, 8)
             Text("2d")
