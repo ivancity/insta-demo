@@ -50,6 +50,7 @@
 		2CB0C9892845AF3C00648CF1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */; };
 		2CC234AC2851E39E00741485 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AB2851E39E00741485 /* Post.swift */; };
 		2CC234AE28522D7400741485 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AD28522D7400741485 /* FeedViewModel.swift */; };
+		2CC234B0285386CF00741485 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234AF285386CF00741485 /* PostGridViewModel.swift */; };
 		2CE4F0D42845C52F003E2324 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D32845C52F003E2324 /* Constants.swift */; };
 		2CE4F0D628466B2F003E2324 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D528466B2F003E2324 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		2CB0C9882845AF3C00648CF1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		2CC234AB2851E39E00741485 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2CC234AD28522D7400741485 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		2CC234AF285386CF00741485 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		2CE4F0D32845C52F003E2324 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2CE4F0D528466B2F003E2324 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +190,7 @@
 				2CB0C9472843FEF000648CF1 /* Authentication */,
 				2CB0C9462843FEEC00648CF1 /* Notifications */,
 				2CB0C9452843FEE700648CF1 /* Feed */,
+				2CC234AF285386CF00741485 /* PostGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				2CB0C94D2844187B00648CF1 /* FeedView.swift in Sources */,
 				2CB0C92C2843F68800648CF1 /* ContentView.swift in Sources */,
 				2CB0C92A2843F68800648CF1 /* InstagramSwiftUITutorialApp.swift in Sources */,
+				2CC234B0285386CF00741485 /* PostGridViewModel.swift in Sources */,
 				2CB0C971284545B100648CF1 /* ResetPasswordView.swift in Sources */,
 				2CB0C94A2844181700648CF1 /* MainTabView.swift in Sources */,
 				2C10648828485BBA00475F3B /* UploadPostViewModel.swift in Sources */,

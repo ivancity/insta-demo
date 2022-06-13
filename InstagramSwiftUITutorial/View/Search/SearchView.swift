@@ -23,7 +23,7 @@ struct SearchView: View {
                         searchText: $searchText
                     )
                 } else {
-                    PostGridView()
+                    PostGridView(config: .explore)
                 }
             }
         }
