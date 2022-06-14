@@ -10,17 +10,18 @@ class FeedCellViewModel: ObservableObject {
     
     init(post: Post) {
         self.post = post
+        checkIfUserLikedPost()
     }
     
     func like() {
         guard let uid = AuthViewModel.shared.userSession?.uid else { return }
         guard let postId = post.id else { return }
         
-        COLLECTION_POSTS.document(post.id ?? "")
+        COLLECTION_POSTS.document(postId)
             .collection("post-likes")
             .document(uid)
             .setData([:]) { _ in
-                COLLECTION_POSTS
+                COLLECTION_USERS
                     .document(uid)
                     .collection("user-likes")
                     .document(postId)
@@ -60,6 +61,16 @@ class FeedCellViewModel: ObservableObject {
     }
     
     func checkIfUserLikedPost() {
+        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
+        guard let postId = post.id else { return }
         
+        COLLECTION_USERS
+            .document(uid)
+            .collection("user-likes")
+            .document(postId)
+            .getDocument { snapshot, _ in
+                guard let didLike = snapshot?.exists else { return }
+                self.post.didLike = didLike
+            }
     }
 }
