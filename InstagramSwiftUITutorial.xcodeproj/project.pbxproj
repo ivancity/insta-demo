@@ -56,6 +56,7 @@
 		2CC234B62859273500741485 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234B52859273500741485 /* CommentsView.swift */; };
 		2CC234B82859275E00741485 /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234B72859275E00741485 /* CommentsCell.swift */; };
 		2CC234BA2859277A00741485 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234B92859277A00741485 /* CommentViewModel.swift */; };
+		2CC234BC285A25EF00741485 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC234BB285A25EF00741485 /* CustomInputView.swift */; };
 		2CE4F0D42845C52F003E2324 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D32845C52F003E2324 /* Constants.swift */; };
 		2CE4F0D628466B2F003E2324 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4F0D528466B2F003E2324 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,7 @@
 		2CC234B52859273500741485 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		2CC234B72859275E00741485 /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
 		2CC234B92859277A00741485 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		2CC234BB285A25EF00741485 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		2CE4F0D32845C52F003E2324 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2CE4F0D528466B2F003E2324 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -316,6 +318,7 @@
 				2CB0C95A284456C000648CF1 /* PostGridView.swift */,
 				2CB0C95C284458BD00648CF1 /* UserCell.swift */,
 				2CB0C95E284458C900648CF1 /* UserListView.swift */,
+				2CC234BB285A25EF00741485 /* CustomInputView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				2C10648A284A5A0E00475F3B /* TextArea.swift in Sources */,
 				2CB0C9652844771B00648CF1 /* ProfileHeaderView.swift in Sources */,
 				2C1064852847174C00475F3B /* UserService.swift in Sources */,
+				2CC234BC285A25EF00741485 /* CustomInputView.swift in Sources */,
 				2CB0C955284418FD00648CF1 /* UploadPostView.swift in Sources */,
 				2CB0C96728447F8200648CF1 /* UserStatView.swift in Sources */,
 				2CB0C95D284458BD00648CF1 /* UserCell.swift in Sources */,
