@@ -1,10 +1,3 @@
-//
-//  UserListView.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 5/29/22.
-//
-
 import SwiftUI
 
 struct UserListView: View {

@@ -1,10 +1,3 @@
-//
-//  CustomSecureField.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 5/30/22.
-//
-
 import SwiftUI
 
 struct CustomSecureField: View {

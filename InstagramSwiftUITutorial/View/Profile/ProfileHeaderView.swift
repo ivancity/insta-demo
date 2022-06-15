@@ -20,13 +20,6 @@ struct ProfileHeaderView: View {
                 }
                 .frame(width: 80, height: 80)
                 .padding(.leading)
-                
-//                Image("background-colors")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .frame(width: 80, height: 80)
-//                    .clipShape(Circle())
-//                    .padding(.leading)
                 Spacer()
                 HStack(spacing: 16) {
                     UserStatView(value: 2, title: "Followers")

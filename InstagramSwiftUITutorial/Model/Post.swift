@@ -1,10 +1,3 @@
-//
-//  Post.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 6/9/22.
-//
-
 import FirebaseFirestoreSwift
 import Firebase
 
