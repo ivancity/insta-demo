@@ -1,10 +1,3 @@
-//
-//  CustomInputView.swift
-//  InstagramSwiftUITutorial
-//
-//  Created by Ivan on 6/15/22.
-//
-
 import SwiftUI
 
 struct CustomInputView: View {
